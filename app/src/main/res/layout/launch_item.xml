@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLaunchImage"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvMissionName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivLaunchImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Test Mission Name" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvRocketName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivLaunchImage"
+        app:layout_constraintTop_toBottomOf="@id/tvMissionName"
+        tools:text="Test Rocket Name" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvLaunchSiteName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivLaunchImage"
+        app:layout_constraintTop_toBottomOf="@id/tvRocketName"
+        tools:text="Test Launch Site Name" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvLaunchDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivLaunchImage"
+        app:layout_constraintTop_toBottomOf="@id/tvLaunchSiteName"
+        tools:text="Test Launch Site Name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
