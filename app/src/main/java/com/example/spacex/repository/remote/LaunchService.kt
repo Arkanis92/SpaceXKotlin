@@ -5,7 +5,8 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface LaunchService {
-    @GET("launches")
+    @GET("launches/past")
     suspend fun fetchAllLaunches(
+//        @Query("limit") limit: Int
     ): List<LaunchResponse>
 }

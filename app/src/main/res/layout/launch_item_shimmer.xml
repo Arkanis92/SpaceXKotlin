@@ -4,49 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/layoutLaunchItem"
-    android:layout_margin="5dp">
-
-<!--    <com.facebook.shimmer.ShimmerFrameLayout-->
-<!--        android:id="@+id/shimmerContainer"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:shimmer_duration="800">-->
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:orientation="vertical">-->
-
-<!--            <include layout="@layout/launch_item_shimmer" />-->
-
-<!--        </LinearLayout>-->
-
-<!--    </com.facebook.shimmer.ShimmerFrameLayout>-->
+    android:padding="5dp">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivLaunchImage"
         android:layout_width="100dp"
         android:layout_height="0dp"
+        android:background="@color/background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/ic_launcher_background" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvMissionName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ivLaunchImage"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Test Mission Name" />
+        android:background="@color/background" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvRocketName"
@@ -57,7 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ivLaunchImage"
         app:layout_constraintTop_toBottomOf="@id/tvMissionName"
-        tools:text="Test Rocket Name" />
+        android:background="@color/background" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvLaunchSiteName"
@@ -68,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ivLaunchImage"
         app:layout_constraintTop_toBottomOf="@id/tvRocketName"
-        tools:text="Test Launch Site Name" />
+        android:background="@color/background" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvLaunchDate"
@@ -79,7 +56,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ivLaunchImage"
         app:layout_constraintTop_toBottomOf="@id/tvLaunchSiteName"
-        tools:text="Test Launch Site Name" />
+        android:background="@color/background" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
